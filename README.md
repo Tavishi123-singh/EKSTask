@@ -1,1 +1,3 @@
 # EKSTask
+
+Deploying Wordpress website on EKS Cluster via fargate profile and using HELM to integrate monitoring tools like Grafana and Prometheus. We will see about the EKS and its uses case how it use and how it configure what will be the processor for creating such kind of cluster and how many type of cluster we can make.After this we will Integrate it with EBS, EFS and ELB.After doing Integration we can launch a pod that will be Wordpress with MySQL .for this site we first have to configure MySQL and then Wordpress. We will then use HELM , the package manager for Kubernetes. Then we can launch a prometheus server on the EKS and then integrate it with Grafana which will provide us with a dashboard to monitor the cluster.
