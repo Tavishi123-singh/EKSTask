@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: rcweb1
+
+spec:
+  replicas: 3
+  selector: 
+    env: dev
+    dc: IN
+    app: webserver
+  template:
+    metadata:    
+      name: mypod1
+      labels:
+        env: dev
+        dc: IN
+        app: webserver
+    spec:
+      containers:
+      - name: "mycon1"
+        image: "vimal13/apache-webserver-php"
+
+
+
